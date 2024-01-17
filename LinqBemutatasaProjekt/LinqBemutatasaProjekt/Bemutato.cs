@@ -32,6 +32,23 @@ namespace LinqBemutatasaProjekt
 
         }
 
+        internal void LegjobbÁtlagúTanulóNeve()
+        {
+            var lekérdezés = tanulok.
+                OrderByDescending(tanuló => tanuló.atlag).
+                Take(1).
+                Select(t => (t.nev, t.atlag));
+
+
+            Console.WriteLine("név: átlag");
+            foreach (var sor in lekérdezés)
+            {
+                Console.WriteLine("{0}: {1}", sor.nev, sor.atlag);
+
+            }
+
+        }
+
         internal object TanulokSzama()
         {
             return tanulok.Count();
