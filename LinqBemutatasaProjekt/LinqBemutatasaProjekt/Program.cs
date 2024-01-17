@@ -18,7 +18,7 @@ namespace LinqBemutatasaProjekt
             Console.WriteLine("\nMilyen osztályaink vannak: ");
             b.Osztályaink();
 
-            Console.WriteLine("\nA legjobb átlagú tanuló nevel");
+            Console.WriteLine("\nA legjobb átlagú tanuló neve12");
             b.LegjobbÁtlagúTanulóNeve();
 
             Console.ReadLine();
