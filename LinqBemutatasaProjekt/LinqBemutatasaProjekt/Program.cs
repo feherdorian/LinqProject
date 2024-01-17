@@ -14,11 +14,13 @@ namespace LinqBemutatasaProjekt
             Bemutato b = new Bemutato(fajl);
 
             Console.WriteLine("Ennyi tanuló van összesen: {0}", b.TanulokSzama());
+
             Console.WriteLine("\nMilyen osztályaink vannak: ");
             b.Osztályaink();
 
-            Console.WriteLine("\nA legjobb átlagú tanuló neve");
+            Console.WriteLine("\nA legjobb átlagú tanuló nevel");
             b.LegjobbÁtlagúTanulóNeve();
+
             Console.ReadLine();
         }
     }
