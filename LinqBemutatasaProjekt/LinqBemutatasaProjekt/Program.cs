@@ -14,6 +14,8 @@ namespace LinqBemutatasaProjekt
             Bemutato b = new Bemutato(fajl);
 
             Console.WriteLine("Ennyi tanuló van összesen: {0}", b.TanulokSzama());
+            Console.WriteLine("\nMilyen osztályaink vannak: ");
+            b.Osztályaink();
 
             Console.ReadLine();
         }

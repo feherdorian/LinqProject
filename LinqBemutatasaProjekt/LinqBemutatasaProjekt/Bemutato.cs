@@ -16,6 +16,22 @@ namespace LinqBemutatasaProjekt
             Beolvas();
         }
 
+
+        internal void Osztályaink()
+        {
+            var lekérdezés =
+                from tanulo in tanulok
+                group tanulo by tanulo.osztaly into g 
+                orderby g.Key descending
+                select new { osztaly = g.Key };
+
+            foreach (var sor in lekérdezés)
+            {
+                Console.WriteLine(sor.osztaly);
+            }
+
+        }
+
         internal object TanulokSzama()
         {
             return tanulok.Count();
