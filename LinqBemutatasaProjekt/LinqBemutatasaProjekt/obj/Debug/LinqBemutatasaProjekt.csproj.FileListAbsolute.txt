@@ -1,0 +1,7 @@
+C:\Users\dolly\OneDrive\Asztali gép\Progi\LinqProjekt\Linq\LinqBemutatasaProjekt\LinqBemutatasaProjekt\bin\Debug\LinqBemutatasaProjekt.exe.config
+C:\Users\dolly\OneDrive\Asztali gép\Progi\LinqProjekt\Linq\LinqBemutatasaProjekt\LinqBemutatasaProjekt\bin\Debug\LinqBemutatasaProjekt.exe
+C:\Users\dolly\OneDrive\Asztali gép\Progi\LinqProjekt\Linq\LinqBemutatasaProjekt\LinqBemutatasaProjekt\bin\Debug\LinqBemutatasaProjekt.pdb
+C:\Users\dolly\OneDrive\Asztali gép\Progi\LinqProjekt\Linq\LinqBemutatasaProjekt\LinqBemutatasaProjekt\obj\Debug\LinqBemutatasaProjekt.csproj.AssemblyReference.cache
+C:\Users\dolly\OneDrive\Asztali gép\Progi\LinqProjekt\Linq\LinqBemutatasaProjekt\LinqBemutatasaProjekt\obj\Debug\LinqBemutatasaProjekt.csproj.CoreCompileInputs.cache
+C:\Users\dolly\OneDrive\Asztali gép\Progi\LinqProjekt\Linq\LinqBemutatasaProjekt\LinqBemutatasaProjekt\obj\Debug\LinqBemutatasaProjekt.exe
+C:\Users\dolly\OneDrive\Asztali gép\Progi\LinqProjekt\Linq\LinqBemutatasaProjekt\LinqBemutatasaProjekt\obj\Debug\LinqBemutatasaProjekt.pdb
