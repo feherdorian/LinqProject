@@ -20,3 +20,5 @@
 -Függvény tartalma: A függvény tartalma egy egyszerű kifejezésből áll. Visszatér a tanulok nevű kollekció (feltételezem, hogy ez egy lista vagy valamilyen gyűjtemény típus) elemeinek számával. A tanulok.Count() kódrészlet a tanulok kollekcióban található elemek számát számolja.
 
 -Ez a függvény tehát egy egyszerű módon visszaadja a tanulok nevű gyűjteményben található elemek számát, és ezt az értéket egy általános objektumként adja vissza. Fontos megjegyezni, hogy ha a tanulok valamilyen specifikus típusú elemeket tartalmaz, akkor érdemes lehet megváltoztatni a függvény visszatérési típusát a konkrét típusra.
+
+## Legjob átlagú kikeresése
