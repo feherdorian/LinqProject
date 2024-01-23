@@ -21,3 +21,15 @@
 
 -Ez a függvény tehát egy egyszerű módon visszaadja a tanulok nevű gyűjteményben található elemek számát, és ezt az értéket egy általános objektumként adja vissza. Fontos megjegyezni, hogy ha a tanulok valamilyen specifikus típusú elemeket tartalmaz, akkor érdemes lehet megváltoztatni a függvény visszatérési típusát a konkrét típusra.
 
+## Legjob átlagú kikeresése
+- OrderByDescending(tanuló => tanuló.atlag): A tanulok listát csökkenő sorrendben rendezi az átlag alapján.
+
+- Take(1): Az első elemet választja ki a rendezett listából, ami a legmagasabb átlagú tanuló lesz.
+
+- Select(t => (t.nev, t.atlag)): Kiválasztja a kiválasztott tanuló nevét és átlagát, és egy tuple-be helyezi.
+
+- Console.WriteLine("név: átlag"): Kiírja a konzolra a fejlécet.
+
+- foreach (var sor in lekérdezés): Végigiterál a kiválasztott tanulókon.
+
+- Console.WriteLine("{0}: {1}", sor.nev, sor.atlag): Kiírja a tanuló nevét és átlagát a konzolra.
