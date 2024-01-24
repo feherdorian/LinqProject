@@ -12,6 +12,11 @@ namespace LinqProjekt
         {
             string fajl = "focicsapat.txt";
             Bemutato b = new Bemutato(fajl);
+
+            Console.WriteLine("1. Csapatok névsorban");
+            b.Nevsor();
+
+
             Console.ReadLine();
         }
     }

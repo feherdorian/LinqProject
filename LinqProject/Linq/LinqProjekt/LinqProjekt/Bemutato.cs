@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace LinqProjekt
 {
@@ -15,6 +16,7 @@ namespace LinqProjekt
             Beolvas();
         }
 
+
         private void Beolvas()
         {
             string[] sorok = File.ReadAllLines(fajl);
@@ -27,6 +29,22 @@ namespace LinqProjekt
                 string menedzser = oszlopok[3];
                 string orszag = oszlopok[4];
                 csapatok.Add(new Csapat(id, csapat, bajnokiCim, menedzser, orszag));
+            }
+        }
+
+        internal void Nevsor()
+        {
+            //var lek = from csapat in csapatok
+            //          orderby csapat.csapat
+            //          select csapat;
+
+
+            //lamda
+            var lek = csapatok.OrderBy(cs => cs.csapat);
+
+            foreach (var sor in lek)
+            {
+                Console.WriteLine("\t- {0}", sor.csapat);
             }
         }
     }
