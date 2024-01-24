@@ -16,6 +16,9 @@ namespace LinqProjekt
             Console.WriteLine("1. Csapatok névsorban");
             b.Nevsor();
 
+            Console.WriteLine("2. 20 vagy több bajnoki címmel rendelkező csapatok");
+            b.SokCimesek();
+
 
             Console.ReadLine();
         }
