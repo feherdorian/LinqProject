@@ -27,7 +27,7 @@ namespace LinqBemutatasaProjekt
 
             foreach (var sor in lekérdezés)
             {
-                Console.WriteLine(sor.osztaly);
+                Console.WriteLine("\t{0}",sor.osztaly);
             }
 
         }
@@ -40,10 +40,10 @@ namespace LinqBemutatasaProjekt
                 Select(t => (t.nev, t.atlag));
 
 
-            Console.WriteLine("név: átlag");
+            Console.WriteLine("\tnév: átlag");
             foreach (var sor in lekérdezés)
             {
-                Console.WriteLine("{0}: {1}", sor.nev, sor.atlag);
+                Console.WriteLine("\t{0}: {1}", sor.nev, sor.atlag);
 
             }
 
@@ -67,6 +67,17 @@ namespace LinqBemutatasaProjekt
                 double atlag = double.Parse(oszlopok[4]);
                 string neme = oszlopok[5];
                 tanulok.Add(new Tanulo(nev, osztaly, szulev, osztondij, atlag, neme));
+            }
+        }
+
+        internal void AdottKedoBetu(string betű)
+        {
+            var lek = tanulok.Where(t => t.nev.Substring(0, 1) == betű).
+                OrderBy(t => t.nev);
+
+            foreach (var sor in lek)
+            {
+                Console.WriteLine("\t{0}",sor.nev);
             }
         }
     }

@@ -21,6 +21,11 @@ namespace LinqBemutatasaProjekt
             Console.WriteLine("\nA legjobb átlagú tanuló neve");
             b.LegjobbÁtlagúTanulóNeve();
 
+            Console.WriteLine("\nP betűvel kezdődő nevek:");
+            string betű = "p";
+            b.AdottKedoBetu(betű);
+
+
             Console.ReadLine();
         }
     }
