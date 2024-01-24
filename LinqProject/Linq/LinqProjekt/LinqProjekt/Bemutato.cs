@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+
+namespace LinqProjekt
+{
+    internal class Bemutato
+    {
+        private string fajl;
+        List<Csapat> csapatok = new List<Csapat>();
+
+        public Bemutato(string fajl)
+        {
+            this.fajl = fajl;
+            Beolvas();
+        }
+
+        private void Beolvas()
+        {
+            string[] sorok = File.ReadAllLines(fajl);
+            for (int i = 1; i < sorok.Length; i++)
+            {
+                string[] oszlopok = sorok[i].Split(';');
+                int id = int.Parse(oszlopok[0]);
+                string csapat = oszlopok[1];
+                int bajnokiCim = int.Parse(oszlopok[2]);
+                string menedzser = oszlopok[3];
+                string orszag = oszlopok[4];
+                csapatok.Add(new Csapat(id, csapat, bajnokiCim, menedzser, orszag));
+            }
+        }
+    }
+}
