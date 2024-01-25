@@ -47,5 +47,19 @@ namespace LinqProjekt
                 Console.WriteLine("\t- {0}", sor.csapat);
             }
         }
+
+        internal void SokCimesek()
+        {
+            var lek = from csapat in csapatok
+                      where csapat.bajnokiCim > 20 
+                      select csapat;
+
+            //lamda
+            //var lek = csapatok.Where(cs => cs.bajnokiCim > 20);
+
+
+            foreach (var sor in lek)
+            { Console.WriteLine("\t-{0}: {1}", sor.csapat, sor.bajnokiCim);}
+        }
     }
 }
