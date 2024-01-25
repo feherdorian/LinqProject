@@ -18,7 +18,9 @@
   var lek = csapatok.OrderBy(cs => cs.csapat);
 ```
 
+
 ## 2. 20 vagy több bajnoki címmel rendelkező csapatok
+
 ### Sql
 ```sql
   SELECT id, csapat, bajnokiCim from csapatok
@@ -38,7 +40,9 @@
   var lek = csapatok.Where(cs => cs.bajnokiCim > 20);
 ```
 
+
 ## 3. Országonként hány csapat van
+
 ### Sql 
 
 ```sql
@@ -66,4 +70,14 @@
           Orszag = groupedCsapatok.Key,
           Letszam = groupedCsapatok.Count()
       });
+```
+
+
+## 4. 1-3 legtöbb címmel rendelkező csapat
+
+### Sql
+```sql
+  SELECT csapat, bajnokiCim from csapatok
+      order BY bajnokiCim DESC
+      Limit 3;
 ```
