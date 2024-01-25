@@ -1,4 +1,5 @@
 ## 1. Csapatok névsorban
+
 ### Sql
 ```sql
   SELECT *from csapatok
