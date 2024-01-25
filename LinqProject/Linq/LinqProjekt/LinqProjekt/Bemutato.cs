@@ -61,5 +61,31 @@ namespace LinqProjekt
             foreach (var sor in lek)
             { Console.WriteLine("\t-{0}: {1}", sor.csapat, sor.bajnokiCim);}
         }
+
+        internal void OrszagonkentCsapatok()
+        {
+            //var lek = from cs in csapatok
+            //             group cs by cs.orszag into groupedCsapatok
+            //             select new
+            //             {
+            //                 Orszag = groupedCsapatok.Key,
+            //                 Letszam = groupedCsapatok.Count(),
+            //             };
+
+            //Lamda
+            var lek = csapatok
+                .GroupBy(cs => cs.orszag)
+                .Select(groupedCsapatok => new
+                {
+                    Orszag = groupedCsapatok.Key,
+                    Letszam = groupedCsapatok.Count()
+                });
+
+
+            foreach (var sor in lek)
+            {
+                Console.WriteLine("\t-{0}: {1}", sor.Orszag, sor.Letszam);
+            }
+        }
     }
 }
