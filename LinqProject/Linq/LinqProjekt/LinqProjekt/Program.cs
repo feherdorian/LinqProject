@@ -16,6 +16,8 @@ namespace LinqProjekt
             Console.WriteLine("1. Csapatok névsorban");
             b.Nevsor();
 
+           
+
 
             Console.ReadLine();
         }
