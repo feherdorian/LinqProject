@@ -32,7 +32,7 @@ VALUES
   ('Sevilla', 1, 'Flores', 'Spanyolország'),
   ('PSG', 11, 'Enrique', 'Franciaország');
 
-SELECT * FROM csapatok;
+SELECT *FROM csapatok;
 
 #lekérdezések
 
@@ -40,10 +40,12 @@ SELECT * FROM csapatok;
   SELECT *from csapatok
     order by  csapat;
 
-# 2. 20 vagy több bajnoki címmel rendelkezõ csapatok
-  SELECT id, csapat, bajnokiCim from csapatok
-    where bajnokiCim > 20;
-
-# 3. országonként hány csapat van
+# 2. országonként hány csapat van
 select id, orszag ,Count(*) Letszam  from csapatok
-  group by orszag ;
+  group by orszag;
+
+# 3. 1-3 legtöbb címmel rendelkezõ csapat
+  SELECT csapat, bajnokiCim from csapatok
+    order BY bajnokiCim DESC
+    Limit 3;
+
