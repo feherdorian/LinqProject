@@ -49,3 +49,9 @@ select id, orszag ,Count(*) Letszam  from csapatok
     order BY bajnokiCim DESC
     Limit 3;
 
+# Dictionary
+
+# 1. Országonként átlag bajnoki cím
+  SELECT id, orszag, AVG(bajnokiCim) Összeg from csapatok
+    group by orszag;
+

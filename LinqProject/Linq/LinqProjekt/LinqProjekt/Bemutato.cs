@@ -84,6 +84,7 @@ namespace LinqProjekt
 
 
             //Lamda
+
             //var lek = csapatok.OrderByDescending(cs => cs.bajnokiCim).
             //    Take(3);
 
