@@ -12,6 +12,12 @@ namespace DictionaryProject
         {
             string fajl = "csapatok.txt";
             Bemutato b = new Bemutato(fajl);
+
+            Console.WriteLine("1. Országokban átlag bajnoki cím");
+            b.AtlagOrszagBCim();
+
+
+            Console.ReadLine();
         }
     }
 }
