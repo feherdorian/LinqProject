@@ -48,20 +48,6 @@ namespace LinqProjekt
             }
         }
 
-        internal void SokCimesek()
-        {
-            var lek = from csapat in csapatok
-                      where csapat.bajnokiCim > 20 
-                      select csapat;
-
-            //lamda
-            //var lek = csapatok.Where(cs => cs.bajnokiCim > 20);
-
-
-            foreach (var sor in lek)
-            { Console.WriteLine("\t-{0}: {1}", sor.csapat, sor.bajnokiCim);}
-        }
-
         internal void OrszagonkentCsapatok()
         {
             //var lek = from cs in csapatok
@@ -85,6 +71,27 @@ namespace LinqProjekt
             foreach (var sor in lek)
             {
                 Console.WriteLine("\t-{0}: {1}", sor.Orszag, sor.Letszam);
+            }
+        }
+
+        internal void Top3()
+        {
+            var lek = (from csapat in csapatok
+                       orderby csapat.bajnokiCim descending
+                       select csapat).Take(3);
+
+
+
+
+
+            //var lek = csapatok.OrderByDescending(cs => cs.bajnokiCim).
+            //    Take(3);
+
+
+
+            foreach (var sor in lek)
+            {
+                Console.WriteLine("\t-{0}", sor.csapat);
             }
         }
     }

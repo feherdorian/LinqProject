@@ -1,0 +1,11 @@
+id;csapat;bajnokiCim;menedzser;orszag
+1;RealMadrid;35;Ancelotti;Spanyolország
+2;Barcelona;27;Xavi;Spanyolország
+3;ManchesterUnited;20;tenHag;Anglia
+4;LeicesterCity;1;Marescra;Anglia
+5;Ferencváros;34;Stankovic;Magyarország
+6;AtleticoMadrid;11;Simeone;Spanyolország
+7;Videoton;3;Grzelak;Magyarország
+8;Arsenal;13;Arteta;Anglia
+9;Sevilla;1;Flores;Spanyolország
+10;PSG;11;Enrique;Franciaország

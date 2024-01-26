@@ -1,0 +1,96 @@
+INSERT INTO csapatok
+( csapatNev, menendzser, orszag)
+  VALUES
+  ('Real Madrid', 'Carlo Ancelotti','Spanyolország'),
+  ('Manchester City', 'Pep Guardiola','Anglia'),
+  ('Bayern München ', 'Julian Nagelsmann','Németország'),
+  ('Paris Saint-Germain', 'Mauricio Pochettino','Franciaország'),
+  ('Liverpool', 'Jürgen Klopp','Anglia'),
+  ('FC Barcelona', 'Xavi Hernandez','Spanyolország'),
+  ('Juventus', 'Massimiliano Allegri','Olaszország'),
+  ('Manchester United', 'Ralf Rangnick','Anglia'),
+  ('Chelsea', 'Thomas Tuchel','Anglia'),
+  ('Borussia Dortmund', 'Marco Rose','Németország'),
+  ('Inter Milan', 'Simone Inzaghi','Olaszország'),
+  ('Atletico Madrid', 'Diego Simeone','Spanyolország'),
+  ('AC Milan', 'Stefano Pioli','Olaszország'),
+  ('Arsenal', 'Mikel Arteta','Anglia'),
+  ('Ajax', 'Erik ten Hag','Hollandia'),
+  ('RB Leipzig', 'Jesse Marsch','Németország'),
+  ('Sevilla FC', 'Julen Lopetegui','Spanyolország'),
+  ('Napoli', 'Luciano Spalletti','Olaszország'),
+  ('Tottenham Hotspur', 'Antonio Conte','Anglia'),
+  ('AS Roma', 'Jose Mourinho','Olaszország');
+
+SELECT * FROM csapatok;
+
+INSERT INTO jatekosok 
+  (jatekosNev, csapatId, pozicio, nemzetiseg, fizetes)
+  VALUES
+  ('Karim Benzema', 1, 'Csatár', 'Francia', 10000000000000),
+  ('Luka Modriæ', 1, 'Középpályás', 'Horvát', 500000000000),
+  ('Vinícius Júnior', 1, 'Szélsõ', 'Brazil', 2567900000000),
+  ('Kevin De Bruyne', 2, 'Középpályás', 'Belga', 2680000000),
+  ('Raheem Sterling', 2, 'Szélsõ', 'Angol', 378000000),
+  ('Ruben Dias', 2, 'Védõ ', 'Portugál', 47800000000),
+  ('Robert Lewandowski', 3, 'Csatár', 'Lengyel', 577800000000),
+  ('Joshua Kimmich', 3, 'Középpályás', 'Német', 36780000000),
+  ('Manuel Neuer', 3, 'Kapus', 'Német', 46787000000),
+  ('Kylian Mbappé', 4, 'Csatár', 'Francia', 967870000000),
+  ('Neymar Jr', 4, 'Szélsõ', 'Brazil', 897670000000),
+  ('Marco Verratt', 4, 'Középpályás', 'Olasz', 537550000000),
+  ('Mohamed Salah', 5, 'Szélsõ', 'Egyiptomi', 678590000000),
+  ('Virgil van Dijk', 5, 'Védõ', 'Holland', 351567000000),
+  ('Sadio Mané', 5, 'Szélsõ', 'Szenegáli', 231477000000),
+  ('Lionel Messi', 6, 'Szélsõ', 'Argentin', 0),
+  ('Frenkie de Jong', 6, 'Középpályás', 'Holland', 23667800000),
+  ('Ansu Fati', 6, 'Szélsõ', 'Spanyol', 2),
+  ('Cristiano Ronaldo', 7, 'Csatár', 'Portugál', 9000000000000000000000000),
+  ('Paulo Dybala', 7, 'Támadó középpályás', 'Argentin', 2356624200000),
+  ('De Ligt', 7, 'Védõ', 'Holland', 534650000000),
+  ('Bruno Fernandes', 8, 'Középpályás', 'Portugál', 734650000000),
+  ('Marcus Rashford', 8, 'Szélsõ', 'Angol', 5367780000000),
+  ('Harry Maguire', 8, 'Védõ', 'Angol', 1367780000000),
+  ('N Golo Kanté', 9, 'Középpályás', 'Francia', 4367440000000),
+  ('Mason Mount', 9, 'Középpályás', 'Angol', 336334440000000),
+  ('Romelu Lukaku', 9, 'Csatár', 'Belgiumi', 134434440000000),
+  ('Erling Haaland', 10, 'Csatár', 'Norvég', 9348394440000000),
+  ('Jadon Sancho', 10, 'Szélsõ', 'Angol', 23483940000000),
+  ('Marco Reus', 10, 'Támadó középpályás', 'Német', 43483940000000),
+  ('Lautaro Martínez', 11, 'Csatár', 'Argentín', 75463940000000),
+  ('Milan Škriniar', 11, 'Védõ', 'Szlovák', 154640000000),
+  ('Nicolo Barella', 11, 'Középpályás', 'Olasz', 35566940000000),
+  ('Joao Félix', 12, 'Szélsõ', 'Portugál', 55566940000000),
+  ('Luis Suárez', 12, 'Csatár', 'Uruguayi', 34565940000000),
+  ('Koke', 12, 'Középpályás', 'Spanyol', 44665940000000),
+  ('Zlatan Ibrahimoviæ', 13, 'Csatár', 'Svéd', 64785940000000),
+  ('Theo Hernández', 13, 'Balhátvéd', 'Francia', 24785940000000),
+  ('Franck Kessié', 13, 'Középpályás', 'Elefántcsontparti', 44667594000000),
+  ('Bukayo Saka', 14, 'Szélsõ', 'Angol', 1467594000000),
+  ('Pierre-Emerick Aubameyang', 14, 'Csatár', 'Gaboni', 5668594000000),
+  ('Thomas Partey', 14, 'Középpályás', 'Ghánai', 2648574000000),
+  ('Dusan Tadiæ', 15, 'Támadó középpályás', 'Szerb', 14245674000000),
+  ('Ryan Gravenberch', 15, 'Középpályás', 'Holland', 4455674000000),
+  ('Antony', 15, 'Szélsõ', 'Brazil', 3555674000000),
+  ('Christopher Nkunku', 16, 'Támadó középpályás', 'Francia', 46586774000000),
+  ('Yussuf Poulsen', 16, 'Csatár', 'Dán', 2644856774000000),
+  ('Marcel Sabitzer', 16, 'Középpályás', 'Ausztriai', 44485674000000),
+  ('Youssef En-Nesyri', 17, 'Csatár', 'Marokkói', 54685674000000),
+  ('Jesús Navas', 17, 'Szélsõ', 'Spanyol', 34645594000000),
+  ('Jules Koundé', 17, 'Védõ ', 'Francia', 4455594000000),
+  ('Lorenzo Insigne', 18, 'Szélsõ ', 'Olasz', 13355594000000),
+  ('Victor Osimhen', 18, 'Csatár', 'Nigeri', 4555594000000),
+  ('Kalidou Koulibaly', 18, 'Védõ', 'Szenegáli', 7588594000000),
+  ('Harry Kane', 19, 'Csatár', 'Angol', 58594000000),
+  ('Son Heung-min', 19, 'Szélsõ', 'Dél-koreai', 8899996000000),
+  ('Pierre-Emile Hojbjerg', 19, 'Középpályás', 'Dán', 149596000000),
+  ('Jordan Veretout', 20, 'Középpályás', 'Francia', 34956000000),
+  ('Tammy Abraham', 20, 'Csatár', 'Angol', 746656000000),
+  ('Leonardo Spinazzola', 20, 'Balhátvéd', 'Olasz', 4466000000);
+
+SELECT * FROM jatekosok;
+
+
+
+
+
