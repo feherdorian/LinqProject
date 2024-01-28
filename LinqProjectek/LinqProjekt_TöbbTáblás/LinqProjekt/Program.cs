@@ -10,7 +10,10 @@ namespace LinqProjekt
     {
         static void Main(string[] args)
         {
+            string jatekosokFajl = "jatekosok.csv";
+            string csapatokFajl = "csapatok.csv";
 
+            Foci f = new Foci(jatekosokFajl, csapatokFajl);
 
             Console.ReadLine();
         }
