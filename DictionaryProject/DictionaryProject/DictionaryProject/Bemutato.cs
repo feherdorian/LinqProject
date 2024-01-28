@@ -35,7 +35,7 @@ namespace DictionaryProject
 
             foreach (var sor in lek)
             {
-                Console.WriteLine("\n- {0}: {1:0.0}", sor.Orszag, sor.Atlag);
+                Console.WriteLine("\t- {0}: {1:0.0}", sor.Orszag, sor.Atlag);
             }
         }
 
