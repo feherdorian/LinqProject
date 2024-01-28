@@ -18,25 +18,24 @@ namespace DictionaryProject
 
         internal void AtlagOrszagBCim()
         {
-            //var lek = from cs in csapatok
-            //          group cs by csapatok into csop
+            //var lek = from csapat in csapatok
+            //          group csapat by csapat.Value.Item4 into cs
             //          select new
             //          {
-            //              Orszag = csop.Key,
-            //              Atlag = csop.Average(Value.);
+            //              Orszag = cs.Key,
+            //              Atlag = cs.Average(a => a.Value.Item2)
             //          };
 
-            //var lek = csapatok
-            //    .GroupBy(cs => cs.Value.Item4)
-            //    .Select(csipicsapat => new
-            //    {
-            //        Orszag = csipicsapat.Key,
-            //        Atlag = csipicsapat.Average()
-            //    });
+            var lek = csapatok.GroupBy(cs => cs.Value.Item4)
+                .Select(csipcsap => new
+                {
+                    Orszag = csipcsap.Key,
+                    Atlag = csipcsap.Average(a => a.Value.Item2)
+                });
 
             foreach (var sor in lek)
             {
-                Console.WriteLine("\n- {0}: {1}", sor.Orszag, sor.Atlag);
+                Console.WriteLine("\n- {0}: {1:0.0}", sor.Orszag, sor.Atlag);
             }
         }
 
