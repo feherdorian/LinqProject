@@ -41,7 +41,7 @@ SELECT *FROM csapatok;
     order by  csapat;
 
 # 2. országonként hány csapat van
-select id, orszag ,Count(*) Letszam  from csapatok
+select id, orszag ,Count(*) L8etszam  from csapatok
   group by orszag;
 
 # 3. 1-3 legtöbb címmel rendelkezõ csapat
