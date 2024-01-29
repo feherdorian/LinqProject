@@ -55,4 +55,6 @@ select id, orszag ,Count(*) L8etszam  from csapatok
   SELECT id, orszag, AVG(bajnokiCim) Összeg from csapatok
     group by orszag;
 
-
+# 2. Adott csapat adatai
+  SELECT csapat, bajnokiCim, menedzser, orszag from csapatok
+    Where csapat = 'RealMadrid';

@@ -30,6 +30,8 @@
 
 ### Sql
 ```sql
+    SELECT csapat, bajnokiCim, menedzser, orszag from csapatok
+        Where csapat = 'RealMadrid';
 ```
 
 ### Linq
