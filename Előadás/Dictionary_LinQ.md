@@ -25,3 +25,21 @@
             Atlag = csipcsap.Average(a => a.Value.Item2)
         });
 ```
+
+## 2. Adott csapat adatai
+
+### Sql
+```sql
+```
+
+### Linq
+```cs
+    var lek = from csapat in csapatok
+            where csapat.Value.Item1 == Csapat
+            select csapat;
+```
+
+### Lamda
+```cs
+     var lek = csapatok.Where(cs => cs.Value.Item1 == Csapat);
+```

@@ -55,3 +55,4 @@ select id, orszag ,Count(*) L8etszam  from csapatok
   SELECT id, orszag, AVG(bajnokiCim) Összeg from csapatok
     group by orszag;
 
+

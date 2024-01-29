@@ -39,6 +39,23 @@ namespace DictionaryProject
             }
         }
 
+        internal void CsapatKereso(string Csapat)
+        {
+            //var lek = from csapat in csapatok
+            //          where csapat.Value.Item1 == Csapat
+            //          select csapat;
+
+            //Lamda
+            var lek = csapatok.Where(cs => cs.Value.Item1 == Csapat);
+
+            string maszk = "{0,-13} {1,-13} {2,-13} {3,-13}";
+            Console.WriteLine(maszk, "Csapat neve", "Bajnoki címei", "Menedzsere", "Ország");
+            foreach (var sor in lek)
+            {
+                Console.WriteLine(maszk, sor.Value.Item1, sor.Value.Item2, sor.Value.Item3, sor.Value.Item4);
+            }
+        }
+
         private void Beolvas()
         {
             string[] sor = File.ReadAllLines(fajl);

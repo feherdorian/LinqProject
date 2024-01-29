@@ -16,6 +16,9 @@ namespace DictionaryProject
             Console.WriteLine("1. Országokban átlag bajnoki cím");
             b.AtlagOrszagBCim();
 
+            Console.WriteLine("\t2. Adott csapat adatai");
+            string Csapat = "RealMadrid";
+            b.CsapatKereso(Csapat);
 
             Console.ReadLine();
         }
