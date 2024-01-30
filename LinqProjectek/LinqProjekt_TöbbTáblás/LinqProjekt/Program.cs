@@ -15,6 +15,14 @@ namespace LinqProjekt
 
             Foci f = new Foci(jatekosokFajl, csapatokFajl);
 
+            /* 1. Feladat */
+            /* Sorolja fel, milyen pozíciók vannak az adatbázisban, és az adott pozíciókon hány játékos található */
+            f.PozicioCsoportositasa();
+
+            /* 2. Feladat */
+            /* Számolja ki az összes játékos fizetésének átlagát */
+            f.FieztesAtlag();
+
 
             Console.ReadLine();
         }

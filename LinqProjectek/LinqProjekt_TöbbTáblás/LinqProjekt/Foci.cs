@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace LinqProjekt
 {
@@ -8,14 +9,29 @@ namespace LinqProjekt
     {
         private string jatekosokFajl;
         private string csapatokFajl;
-        List<Csapat> csapatok = new List<Csapat>();
-        List<Jatekos> jatekosok = new List<Jatekos>();
+        List<Csapat> csapatokLista = new List<Csapat>();
+        List<Jatekos> jatekosokLista = new List<Jatekos>();
 
         public Foci(string jatekosokFajl, string csapatokFajl)
         {
             this.jatekosokFajl = jatekosokFajl;
             this.csapatokFajl = csapatokFajl;
             Beovlas();
+        }
+
+
+        internal void FieztesAtlag()
+        {
+            Console.WriteLine("Focisták fizetésének átlaga: {0} mFt", jatekosokLista.Average(j => j.fizetes));
+        }
+
+        internal void PozicioCsoportositasa()
+        {
+            var lekerdezes = jatekosokLista.GroupBy(j => j.pozicio);
+            foreach (var sor in lekerdezes)
+            {
+                Console.WriteLine("{0}: {1}", sor.Key, sor.Count());
+            }
         }
 
         private void Beovlas()
@@ -29,8 +45,8 @@ namespace LinqProjekt
                 int csapatId = int.Parse(oszlopok[1]);
                 string pozicio = oszlopok[2];
                 string nemzetiseg = oszlopok[3];
-                int fizetes = int.Parse((oszlopok[4]));
-                jatekosok.Add(new Jatekos(jatekosNev, csapatId, pozicio, nemzetiseg, fizetes));
+                double fizetes = double.Parse(oszlopok[4]);
+                jatekosokLista.Add(new Jatekos(jatekosNev, csapatId, pozicio, nemzetiseg, fizetes));
             }
             for (int i = 1; i < csapatSorok.Length; i++)
             {
@@ -38,7 +54,7 @@ namespace LinqProjekt
                 string csapatNev = oszlopok[0];
                 string menedzser = oszlopok[1]; 
                 string orszag = oszlopok[2];
-                csapatok.Add(new Csapat(csapatNev, menedzser, orszag));
+                csapatokLista.Add(new Csapat(csapatNev, menedzser, orszag));
             }
         }
     }

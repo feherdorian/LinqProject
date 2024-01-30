@@ -6,9 +6,9 @@
         public int csapatId;
         public string pozicio;
         public string nemzetiseg;
-        public int fizetes;
+        public double fizetes;
 
-        public Jatekos(string jatekosNev, int csapatId, string pozicio, string nemzetiseg, int fizetes)
+        public Jatekos(string jatekosNev, int csapatId, string pozicio, string nemzetiseg, double fizetes)
         {
             this.jatekosNev = jatekosNev;
             this.csapatId = csapatId;
