@@ -15,6 +15,7 @@ namespace LinqProjekt
 
             Foci f = new Foci(jatekosokFajl, csapatokFajl);
 
+
             Console.ReadLine();
         }
     }
