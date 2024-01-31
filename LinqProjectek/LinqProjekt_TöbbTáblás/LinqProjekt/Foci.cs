@@ -22,7 +22,7 @@ namespace LinqProjekt
 
         internal void Felsorolas()
         {
-            string poz = "Támadó";
+            string poz = "Csatár";
             var lekerdezes = from jatekos in jatekosokLista
                              join csapat in csapatokLista
                              on jatekos.csapatId equals csapat.Id
