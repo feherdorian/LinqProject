@@ -24,6 +24,8 @@ namespace LinqProjekt
             f.FieztesAtlag();
 
 
+
+
             Console.ReadLine();
         }
     }
