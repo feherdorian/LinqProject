@@ -18,13 +18,24 @@ namespace LinqProjekt
             /* 1. Feladat */
             /* Sorolja fel, milyen pozíciók vannak az adatbázisban, és az adott pozíciókon hány játékos található */
             f.PozicioCsoportositasa();
+            Console.WriteLine();
 
             /* 2. Feladat */
             /* Számolja ki az összes játékos fizetésének átlagát */
             f.FieztesAtlag();
+            Console.WriteLine();
 
+            /* 3. Feladat */
+            /* Írja ki, hogy melyik játékos melyik csapathoz tartozik */
+            //f.HovaTartozik();
 
+            /* 4. Feladat */
+            /* */
+            //f.Csportositas();
 
+            /* 5. Feladat */
+            /* Sorolja fel az összes 'kapus' pozícióban szereplő játékost az adatbázisból! (Minden oszlop jelenjen meg) => Játékos neve, Csapat neve (id alapján), pozíció, nemzetiség, fizetés */
+            f.Felsorolas();
 
             Console.ReadLine();
         }
