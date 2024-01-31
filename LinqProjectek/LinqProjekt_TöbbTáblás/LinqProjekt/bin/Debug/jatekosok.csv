@@ -1,61 +1,61 @@
-jatekosNev;csapatId;pozicio;nemzetiseg;fizetes
-Karim Benzema;1;Csatár;Francia;500
-Luka Modriæ;1;Középpályás;Horvát;200
-Vinícius Júnior;1;Szélsõ;Brazil;250
-Kevin De Bruyne;2;Középpályás;Belga;525
-Raheem Sterling;2;Szélsõ;Angol;177
-Ruben Dias;2;Védõ;Portugál;200.1
-Robert Lewandowski;3;Csatár;Lengyel;370
-Joshua Kimmich;3;Középpályás;Német;102
-Manuel Neuer;3;Kapus;Német;155
-Kylian Mbappé;4;Csatár;Francia;126.5
-Neymar Jr;4;Szélsõ;Brazil;222.2
-Marco Verratt;4;Középpályás;Olasz;103
-Mohamed Salah;5;Szélsõ;Egyiptomi;199
-Virgil van Dijk;5;Védõ;Holland;188
-Sadio Mané;5;Szélsõ;Szenegáli;100.3
-Lionel Messi;6;Szélsõ;Argentin;0.1
-Frenkie de Jong;6;Középpályás;Holland;112
-Ansu Fati;6;Szélsõ;Spanyol;211
-Cristiano Ronaldo;7;Csatár;Portugál;900
-Paulo Dybala;7;Támadó;Argentin;214
-De Ligt;7;Védõ;Holland;367
-Bruno Fernandes;8;Középpályás;Portugál;498
-Marcus Rashford;8;Szélsõ;Angol;513
-Harry Maguire;8;Védõ;Angol;655
-N Golo Kanté;9;Középpályás;Francia;767
-Mason Mount;9;Középpályás;Angol;868
-Romelu Lukaku;9;Csatár;Belgiumi;978
-Erling Haaland;10;Csatár;Norvég;102
-Jadon Sancho;10;Szélsõ;Angol;110
-Marco Reus;10;Támadó;Német;113
-Lautaro Martínez;11;Csatár;Argentín;116
-Milan Škriniar;11;Védõ;Szlovák;117
-Nicolo Barella;11;Középpályás;Olasz;198
-Joao Félix;12;Szélsõ;Portugál;191
-Luis Suárez;12;Csatár;Uruguayi;146
-Koke ;12;Középpályás;Spanyol;157
-Zlatan Ibrahimoviæ;13;Csatár;Svéd;145
-Theo Hernández;13;Balhátvéd;Francia;121
-Franck Kessié;13;Középpályás;Elefántcsontparti;157
-Bukayo Saka;14;Szélsõ;Angol;126
-Pierre Emerick Aubameyang;14;Csatár;Gaboni;116
-Thomas Partey;14;Középpályás;Ghánai;178
-Dusan Tadiæ;15;Támadó;Szerb;187
-Ryan Gravenberch;15;Középpályás;Holland;167
-Antony ;15;Szélsõ;Brazil;188
-Christopher Nkunku;16;Támadó;Francia;123
-Yussuf Poulsen;16;Csatár;Dán;167
-Marcel Sabitzer;16;Középpályás;Ausztriai;187
-Youssef En-Nesyri;17;Csatár;Marokkói;166
-Jesús Navas;17;Szélsõ;Spanyol;188
-Jules Koundé;17;Védõ;Francia;189
-Lorenzo Insigne;18;Szélsõ;Olasz;134
-Victor Osimhen;18;Csatár;Nigeri;164
-Kalidou Koulibaly;18;Védõ;Szenegáli;124
-Harry Kane;19;Csatár;Angol;155
-Son Heung-min;19;Szélsõ;Dél;156
-Pierre Emile Hojbjerg;19;Középpályás;Dán;112
-Jordan Veretout;20;Középpályás;Francia;145
-Tammy Abraham;20;Csatár;Angol;165
-Leonardo Spinazzola;20;Balhátvéd;Olasz;132
+ï»¿jatekosNev;csapatId;pozicio;nemzetiseg;fizetes
+Karim Benzema;1;CsatÃ¡r;Francia;500
+Luka ModriÄ‡;1;KÃ¶zÃ©ppÃ¡lyÃ¡s;HorvÃ¡t;200
+VinÃ­cius JÃºnior;1;SzÃ©lsÅ‘;Brazil;250
+Kevin De Bruyne;2;KÃ¶zÃ©ppÃ¡lyÃ¡s;Belga;525
+Raheem Sterling;2;SzÃ©lsÅ‘;Angol;177
+Ruben Dias;2;VÃ©dÅ‘;PortugÃ¡l;200,1
+Robert Lewandowski;3;CsatÃ¡r;Lengyel;370
+Joshua Kimmich;3;KÃ¶zÃ©ppÃ¡lyÃ¡s;NÃ©met;102
+Manuel Neuer;3;Kapus;NÃ©met;155
+Kylian MbappÃ©;4;CsatÃ¡r;Francia;126,5
+Neymar Jr;4;SzÃ©lsÅ‘;Brazil;222,2
+Marco Verratt;4;KÃ¶zÃ©ppÃ¡lyÃ¡s;Olasz;103
+Mohamed Salah;5;SzÃ©lsÅ‘;Egyiptomi;199
+Virgil van Dijk;5;VÃ©dÅ‘;Holland;188
+Sadio ManÃ©;5;SzÃ©lsÅ‘;SzenegÃ¡li;100,3
+Lionel Messi;6;SzÃ©lsÅ‘;Argentin;0,1
+Frenkie de Jong;6;KÃ¶zÃ©ppÃ¡lyÃ¡s;Holland;112
+Ansu Fati;6;SzÃ©lsÅ‘;Spanyol;211
+Cristiano Ronaldo;7;CsatÃ¡r;PortugÃ¡l;900
+Paulo Dybala;7;TÃ¡madÃ³;Argentin;214
+De Ligt;7;VÃ©dÅ‘;Holland;367
+Bruno Fernandes;8;KÃ¶zÃ©ppÃ¡lyÃ¡s;PortugÃ¡l;498
+Marcus Rashford;8;SzÃ©lsÅ‘;Angol;513
+Harry Maguire;8;VÃ©dÅ‘;Angol;655
+N Golo KantÃ©;9;KÃ¶zÃ©ppÃ¡lyÃ¡s;Francia;767
+Mason Mount;9;KÃ¶zÃ©ppÃ¡lyÃ¡s;Angol;868
+Romelu Lukaku;9;CsatÃ¡r;Belgiumi;978
+Erling Haaland;10;CsatÃ¡r;NorvÃ©g;102
+Jadon Sancho;10;SzÃ©lsÅ‘;Angol;110
+Marco Reus;10;TÃ¡madÃ³;NÃ©met;113
+Lautaro MartÃ­nez;11;CsatÃ¡r;ArgentÃ­n;116
+Milan Å kriniar;11;VÃ©dÅ‘;SzlovÃ¡k;117
+Nicolo Barella;11;KÃ¶zÃ©ppÃ¡lyÃ¡s;Olasz;198
+Joao FÃ©lix;12;SzÃ©lsÅ‘;PortugÃ¡l;191
+Luis SuÃ¡rez;12;CsatÃ¡r;Uruguayi;146
+Koke ;12;KÃ¶zÃ©ppÃ¡lyÃ¡s;Spanyol;157
+Zlatan IbrahimoviÄ‡;13;CsatÃ¡r;SvÃ©d;145
+Theo HernÃ¡ndez;13;BalhÃ¡tvÃ©d;Francia;121
+Franck KessiÃ©;13;KÃ¶zÃ©ppÃ¡lyÃ¡s;ElefÃ¡ntcsontparti;157
+Bukayo Saka;14;SzÃ©lsÅ‘;Angol;126
+Pierre Emerick Aubameyang;14;CsatÃ¡r;Gaboni;116
+Thomas Partey;14;KÃ¶zÃ©ppÃ¡lyÃ¡s;GhÃ¡nai;178
+Dusan TadiÄ‡;15;TÃ¡madÃ³;Szerb;187
+Ryan Gravenberch;15;KÃ¶zÃ©ppÃ¡lyÃ¡s;Holland;167
+Antony ;15;SzÃ©lsÅ‘;Brazil;188
+Christopher Nkunku;16;TÃ¡madÃ³;Francia;123
+Yussuf Poulsen;16;CsatÃ¡r;DÃ¡n;167
+Marcel Sabitzer;16;KÃ¶zÃ©ppÃ¡lyÃ¡s;Ausztriai;187
+Youssef En-Nesyri;17;CsatÃ¡r;MarokkÃ³i;166
+JesÃºs Navas;17;SzÃ©lsÅ‘;Spanyol;188
+Jules KoundÃ©;17;VÃ©dÅ‘;Francia;189
+Lorenzo Insigne;18;SzÃ©lsÅ‘;Olasz;134
+Victor Osimhen;18;CsatÃ¡r;Nigeri;164
+Kalidou Koulibaly;18;VÃ©dÅ‘;SzenegÃ¡li;124
+Harry Kane;19;CsatÃ¡r;Angol;155
+Son Heung-min;19;SzÃ©lsÅ‘;DÃ©l;156
+Pierre Emile Hojbjerg;19;KÃ¶zÃ©ppÃ¡lyÃ¡s;DÃ¡n;112
+Jordan Veretout;20;KÃ¶zÃ©ppÃ¡lyÃ¡s;Francia;145
+Tammy Abraham;20;CsatÃ¡r;Angol;165
+Leonardo Spinazzola;20;BalhÃ¡tvÃ©d;Olasz;132
