@@ -107,6 +107,11 @@ WHERE jatekosok.pozicio = 'Csatár';
 SELECT AVG(fizetes) AS FizetesAtlaga
   FROM jatekosok;
 
+#Hova tartoznak a játékosok
+  SELECT pozicio, COUNT(*) AS JatekosSzama
+    FROM jatekosok
+    GROUP BY pozicio;
+
 
 
 
