@@ -112,6 +112,11 @@ SELECT AVG(fizetes) AS FizetesAtlaga
     FROM jatekosok
     GROUP BY pozicio;
 
+#Poziciók csoportosítása
+SELECT pozicio, COUNT(*) AS JatekosSzama
+  FROM jatekosok
+  GROUP BY pozicio;
+
 
 
 
