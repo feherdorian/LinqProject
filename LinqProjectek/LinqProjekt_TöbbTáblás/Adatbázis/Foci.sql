@@ -98,6 +98,12 @@ JOIN csapatok ON jatekosok.csapatId = csapatok.Id
 ORDER BY csapatok.csapatNev, jatekosok.jatekosNev;
 
 
+SELECT jatekosok.jatekosNev, csapatok.csapatNev, jatekosok.pozicio, jatekosok.nemzetiseg, jatekosok.fizetes
+FROM jatekosok
+JOIN csapatok ON jatekosok.csapatId = csapatok.Id
+WHERE jatekosok.pozicio = 'Csatár';
+
+
 
 
 
