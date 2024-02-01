@@ -31,7 +31,7 @@ namespace LinqProjekt
             Console.WriteLine();
 
             /* 4. Feladat */
-            /* */
+            /* Csportosids az összes játékost */
             f.Csportositas();
             Console.WriteLine();
 

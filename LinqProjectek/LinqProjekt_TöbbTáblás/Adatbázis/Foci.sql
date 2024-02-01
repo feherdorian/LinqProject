@@ -92,6 +92,12 @@ delete  from jatekosok;
 SELECT * FROM jatekosok;
 
 
+SELECT csapatok.csapatNev, jatekosok.jatekosNev, jatekosok.pozicio
+FROM jatekosok
+JOIN csapatok ON jatekosok.csapatId = csapatok.Id
+ORDER BY csapatok.csapatNev, jatekosok.jatekosNev;
+
+
 
 
 
