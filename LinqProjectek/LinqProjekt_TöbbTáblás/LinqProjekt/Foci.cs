@@ -50,6 +50,21 @@ namespace LinqProjekt
             Console.WriteLine("Focisták fizetésének átlaga: {0} mFt", jatekosokLista.Average(j => j.fizetes));
         }
 
+        internal void HovaTartozik()
+        {
+            var lekerdezes = jatekosokLista.GroupBy(j => j.pozicio);
+
+            foreach (var pozicioCsoport in lekerdezes)
+            {
+                Console.WriteLine("{0}: {1} játékos", pozicioCsoport.Key, pozicioCsoport.Count());
+
+                foreach (var jatekos in pozicioCsoport)
+                {
+                    Console.WriteLine($" - {jatekos.jatekosNev}");
+                }
+            }
+        }
+
         internal void PozicioCsoportositasa()
         {
             var lekerdezes = jatekosokLista.GroupBy(j => j.pozicio);

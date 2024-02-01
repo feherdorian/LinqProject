@@ -27,7 +27,8 @@ namespace LinqProjekt
 
             /* 3. Feladat */
             /* Írja ki, hogy melyik játékos melyik csapathoz tartozik */
-            //f.HovaTartozik();
+            f.HovaTartozik();
+            Console.WriteLine();
 
             /* 4. Feladat */
             /* */
