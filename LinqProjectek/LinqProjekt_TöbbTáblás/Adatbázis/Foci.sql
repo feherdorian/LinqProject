@@ -1,4 +1,4 @@
-INSERT INTO csapatok
+INSERT INTO csapatok #Csapatok tábla feltöltése
 ( csapatNev, menendzser, orszag)
   VALUES
   ('Real Madrid', 'Carlo Ancelotti','Spanyolország'),
@@ -23,7 +23,7 @@ INSERT INTO csapatok
   ('AS Roma', 'Jose Mourinho','Olaszország');
 
 SELECT * FROM csapatok;
-
+#Játékos tábla feltöltése 
 INSERT INTO jatekosok 
   (jatekosNev, csapatId, pozicio, nemzetiseg, fizetes)
   VALUES
