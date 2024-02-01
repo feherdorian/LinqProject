@@ -32,7 +32,8 @@ namespace LinqProjekt
 
             /* 4. Feladat */
             /* */
-            //f.Csportositas();
+            f.Csportositas();
+            Console.WriteLine();
 
             /* 5. Feladat */
             /* Sorolja fel az összes 'kapus' pozícióban szereplő játékost az adatbázisból! (Minden oszlop jelenjen meg) => Játékos neve, Csapat neve (id alapján), pozíció, nemzetiség, fizetés */

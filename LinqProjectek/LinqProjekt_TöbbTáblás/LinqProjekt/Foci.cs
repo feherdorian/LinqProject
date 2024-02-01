@@ -20,6 +20,26 @@ namespace LinqProjekt
             Beovlas();
         }
 
+        internal void Csportositas()
+        {
+            var lekerdezes = jatekosokLista
+        .Join(csapatokLista,
+              jatekos => jatekos.csapatId,
+              csapat => csapat.Id,
+              (jatekos, csapat) => new { Jatekos = jatekos, Csapat = csapat })
+        .GroupBy(kapcsolt => kapcsolt.Csapat.csapatNev);
+
+            foreach (var csapatCsoport in lekerdezes)
+            {
+                Console.WriteLine("{0} csapat játékosai:", csapatCsoport.Key);
+
+                foreach (var kapcsolt in csapatCsoport)
+                {
+                    Console.WriteLine($" - Játékos neve: {kapcsolt.Jatekos.jatekosNev}, Pozíció: {kapcsolt.Jatekos.pozicio}");
+                }
+            }
+        }
+
         internal void Felsorolas()
         {
             string poz = "Csatár";
