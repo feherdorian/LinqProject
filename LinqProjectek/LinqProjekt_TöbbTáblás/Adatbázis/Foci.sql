@@ -91,17 +91,23 @@ INSERT INTO jatekosok
 delete  from jatekosok;
 SELECT * FROM jatekosok;
 
-
+#Csportositás
 SELECT csapatok.csapatNev, jatekosok.jatekosNev, jatekosok.pozicio
 FROM jatekosok
 JOIN csapatok ON jatekosok.csapatId = csapatok.Id
 ORDER BY csapatok.csapatNev, jatekosok.jatekosNev;
 
-
+#Felsorolás 
 SELECT jatekosok.jatekosNev, csapatok.csapatNev, jatekosok.pozicio, jatekosok.nemzetiseg, jatekosok.fizetes
 FROM jatekosok
 JOIN csapatok ON jatekosok.csapatId = csapatok.Id
 WHERE jatekosok.pozicio = 'Csatár';
+
+#Fizetés Átlaga az összes játékosnak
+SELECT AVG(fizetes) AS FizetesAtlaga
+  FROM jatekosok;
+
+
 
 
 
