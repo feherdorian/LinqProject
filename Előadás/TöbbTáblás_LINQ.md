@@ -1,6 +1,6 @@
  ## 1.Csoportosítás
  ## Linq
- ```
+ ```cs
         internal void Csportositas()
         {
             var lekerdezes = jatekosokLista
@@ -21,7 +21,8 @@
 }
 ```
 ## Sql
-```SELECT csapatok.csapatNev, jatekosok.jatekosNev, jatekosok.pozicio
+```sql
+SELECT csapatok.csapatNev, jatekosok.jatekosNev, jatekosok.pozicio
 FROM jatekosok
 JOIN csapatok ON jatekosok.csapatId = csapatok.Id
 ORDER BY csapatok.csapatNev, jatekosok.jatekosNev;
@@ -30,7 +31,8 @@ ORDER BY csapatok.csapatNev, jatekosok.jatekosNev;
 
 ## 2. Játákosok felsorolása
 ## Linq
-```internal void Felsorolas()
+```cs
+internal void Felsorolas()
 {
     string poz = "Csatár";
     var lekerdezes = from jatekos in jatekosokLista
@@ -55,7 +57,8 @@ ORDER BY csapatok.csapatNev, jatekosok.jatekosNev;
 }
 ```
 ## Sql
-```SELECT jatekosok.jatekosNev, csapatok.csapatNev, jatekosok.pozicio, jatekosok.nemzetiseg, jatekosok.fizetes
+```sql
+SELECT jatekosok.jatekosNev, csapatok.csapatNev, jatekosok.pozicio, jatekosok.nemzetiseg, jatekosok.fizetes
 FROM jatekosok
 JOIN csapatok ON jatekosok.csapatId = csapatok.Id
 WHERE jatekosok.pozicio = 'Csatár';
@@ -63,19 +66,22 @@ WHERE jatekosok.pozicio = 'Csatár';
 
 ## 3. Játékosoknak fizetés átlaga évente
 ## Linq
-```internal void FieztesAtlag()
+```cs
+internal void FieztesAtlag()
 {
     Console.WriteLine("Focisták fizetésének átlaga: {0} mFt", jatekosokLista.Average(j => j.fizetes));
 }
 ```
 ## Sql
-```SELECT AVG(fizetes) AS FizetesAtlaga
+```sql
+SELECT AVG(fizetes) AS FizetesAtlaga
 FROM jatekosok;
 ```
 
 ## 4. Játékosok melyik csapathoz tartoznak
 ## Linq
-``` internal void HovaTartozik()
+``` cs
+internal void HovaTartozik()
  {
      var lekerdezes = jatekosokLista.GroupBy(j => j.pozicio);
 
@@ -91,14 +97,16 @@ FROM jatekosok;
  }
  ```
  ## Sql
- ```SELECT pozicio, COUNT(*) AS JatekosokSzama
+ ```sql
+ SELECT pozicio, COUNT(*) AS JatekosokSzama
 FROM jatekosok
 GROUP BY pozicio;
 ```
 
  ## 5. Mennyien játszanak egy pozicíóban 
  ## Linq
- ```internal void PozicioCsoportositasa()
+ ```cs
+ internal void PozicioCsoportositasa()
 {
     var lekerdezes = jatekosokLista.GroupBy(j => j.pozicio);
     foreach (var sor in lekerdezes)
@@ -108,7 +116,8 @@ GROUP BY pozicio;
 }
 ```
 ## Sql
-```SELECT pozicio, COUNT(*) AS JatekosokSzama
+```sql
+SELECT pozicio, COUNT(*) AS JatekosokSzama
 FROM jatekosok
 GROUP BY pozicio;
 ```
